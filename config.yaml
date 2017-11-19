@@ -1,0 +1,22 @@
+baseURL:                "https://donearm.github.io"
+title:                  "Gianluca Fiore"
+contentDir:             "content"
+dataDir:                "data"
+publishDir:             "public"
+staticDir:              "static"
+source:                 ""
+themesDir:              "themes"
+theme:                  ""
+defaultExtension:       "html"
+defaultLayout:          "post"
+disableRSS:             false
+disableSitemap:         false
+enableRobotsTXT:        true
+disable404:             false
+enableEmoji:            false
+googleAnalytics:        ""
+paginate:               10
+paginatePath:           "page"
+# Preserve special characters in taxonomy names
+preserveTaxonomyNames:  true
+pygmentsStyle:          "monokai"
