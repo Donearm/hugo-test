@@ -1,5 +1,12 @@
 baseURL:                "https://donearm.github.io"
 title:                  "Gianluca Fiore"
+permalinks:
+    post:               /:year/:month/:title/
+params:
+    Subtitle:           "while alive; do sudo reboot; done"
+    AuthorName:         "Gianluca Fiore"
+    GitHubUser:         "Donearm"
+    SidebarRecentLimit: 5
 contentDir:             "content"
 dataDir:                "data"
 publishDir:             "public"
@@ -9,10 +16,8 @@ themesDir:              "themes"
 theme:                  "hugo-uno"
 defaultExtension:       "html"
 defaultLayout:          "post"
-disableRSS:             false
-disableSitemap:         false
 enableRobotsTXT:        true
-disable404:             false
+disableKinds:           ["RSS", "404"]
 enableEmoji:            false
 googleAnalytics:        ""
 paginate:               10
