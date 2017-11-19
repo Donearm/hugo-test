@@ -6,7 +6,7 @@ publishDir:             "public"
 staticDir:              "static"
 source:                 ""
 themesDir:              "themes"
-theme:                  ""
+theme:                  "hugo-uno"
 defaultExtension:       "html"
 defaultLayout:          "post"
 disableRSS:             false
