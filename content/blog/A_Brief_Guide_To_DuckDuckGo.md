@@ -2,7 +2,7 @@
 title: "A_Brief_Guide_To_DuckDuckGo"
 date: 2015-03-07T17:08:55+01:00
 draft: false
-tags: search engine,  duckduckgo, guide
+tags: ["search engine", "duckduckgo", "guide"]
 category: blog
 Og_Image: 
 ---
