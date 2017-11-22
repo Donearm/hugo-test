@@ -24,7 +24,7 @@ paginate = 10
 
 	[params.sidebar]
 		# Replace the avatar with a picture of your own under static/images
-		avatar = "avatar.jpg"
+		avatar = "gravatar.jpg"
 		# Use Markdown to format the string. This works nearly all over the theme
 		bio = "I'm **Gianluca Fiore**, Mixologist of Code, Drinks and Food"
 		# The icons will be shown if you enter your username
