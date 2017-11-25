@@ -11,14 +11,14 @@ Or why you should be using it even if you don't care about [privacy](http://dont
 
 It's in no way comprehensive nor "the best of". Just what I find more useful.
 
-###Time
+### Time
 
 
 * `days between today and 02/28/2013` = 16 days. Unfortunately, this uses the US month/day/year format
 * `18:30 to 19:25` = 55 minutes
 * `february calendar` = print the calendar for this year's february
 
-###Travel
+### Travel
 
 
 * `weather` = weather for your current location
@@ -26,7 +26,7 @@ It's in no way comprehensive nor "the best of". Just what I find more useful.
 * `florence sunrise` = when does the sun rises in Florence? Here too it works with in the local language
 * `temp in new york` = current temperature in New York
 
-###Numbers and Math
+### Numbers and Math
 
 
 * `uuid` = generate a random unique identifier
@@ -41,13 +41,13 @@ It's in no way comprehensive nor "the best of". Just what I find more useful.
 * `random number` = generate a random number
 * `45 farenheit in celsius` = 7.222. It works also as `45 F to C` (shorter)
 
-###Currency and Finance
+### Currency and Finance
 
 
 * `100 usd to eur` = 74.28€
 * `usd vs eur` = conversion values between $ and €
 
-###Words
+### Words
 
 
 * `0110100001100101011011000110110001101111 to ascii` = binary to ascii conversion
@@ -62,14 +62,14 @@ It's in no way comprehensive nor "the best of". Just what I find more useful.
 * `related to cat` = words related to `cat`
 * `synonyms for cat` = find synonyms
 
-###Travel
+### Travel
 
 
 * `AZ 107` = flight status by flight code. I found this to be somewhat unreliable but 99% of the queries the first link is the right one
 * `distance paris to london` = 342km. Works in the local language too (Koln instead of Cologne, Roma instead of Rome etc.)
 * `time in honolulu` = what time is it in Hawaii?
 
-###Entertainment
+### Entertainment
 
 
 * `monumension album by Enslaved` = info on an album
@@ -78,7 +78,7 @@ It's in no way comprehensive nor "the best of". Just what I find more useful.
 * `imdb Young Frankenstein` = info on a movie
 * `xkcd` = get the latest xkcd comic
 
-###Cooking
+### Cooking
 
 
 * `1 tsp to gram` = how many grams is a teaspoon?
@@ -87,7 +87,7 @@ It's in no way comprehensive nor "the best of". Just what I find more useful.
 * `nutrition in a kiwi` = detailed nutritional facts about Kiwis. The fruit, that is
 * `how to mix a Americano` = how to prepare an Americano?
 
-###Geek
+### Geek
 
 
 * `@Donearm` = shows twitter profile
@@ -113,7 +113,7 @@ It's in no way comprehensive nor "the best of". Just what I find more useful.
 * `public dns` = list common public DNS servers
 * `64.200.12.10` = IP address lookup
 
-###*nix
+### \*nix
 
 
 * `man ctags` = manpage for ctags
@@ -121,7 +121,7 @@ It's in no way comprehensive nor "the best of". Just what I find more useful.
 * `epoch` = time since the Unix epoch
 * `12343435 time` = convert a Unix epoch to date. Also `unix time 12343435`
 
-###Programming
+### Programming
 
 
 * `http status 102` = reference for http status codes. More generally, it accepts various query for many languages. For example, `lua function`, `c #define`, `python urllib2` all return, more or less, what you'd expect
@@ -130,7 +130,7 @@ It's in no way comprehensive nor "the best of". Just what I find more useful.
 * `git cherry-pick` = git manpage
 * `lua jobs` = Github Jobs search (only 1 for lua, me sad...)
 
-#!Bang Syntax
+# !Bang Syntax
 
 These are a bit different since they don't make queries on DuckDuckGo but use other websites to search *into*. In general, it's like using `site:http://www.mysite.com query`, only with far less keystrokes.  
 There are a whole bunch of them. Like, [a lot](https://duckduckgo.com/bang.html). Do browse that list, I'm sure there are many sites that you use to browse to in order to make a search with their internal search form but with these you can do it directly from DuckDuckGo main page. Extremely handy when you already know where to look.
