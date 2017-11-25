@@ -1,140 +1,111 @@
 baseurl = "http://replace-this-with-your-hugo-site.com/"
-languageCode = "en-us"
+languageCode = "en-gb"
+defaultContentLanguage = "en-gb"
 title = "Gianluca Fiore"
-theme = "hugo-strata-theme"
-disqusShortname = "Donearm"
-# Enable Google Analytics by inserting your tracking code
-googleAnalytics = ""
+theme = "hugo-tranquilpeak-theme"
 # Define how many posts should appear on a site
 paginate = 10
+canonifyurls = true
+
+[permalinks]
+	post = "/:year/:month/:slug/"
+
+[taxonomies]
+	tag = "tags"
+	category = "categories"
+	achive = "archives"
+
+[author]
+  name = "Gianluca Fiore"
+  bio = "Mixology of Code, Food and Drinks"
+  homepage = "https://github.com/Donearm"
+  gravatarEmail = "forod.g@gmail.com"
+  location = "Kraków, Poland"
+  twitter = "Donearm"
 
 [params]
-	# To provide some metadata for search engines feel free to add a few
-    # information about you and your website.
-	name = "Gianluca Fiore"
-	description = "while alive; do sudo reboot; done"
-
 	# Format dates with Go's time formatting
-	date_format = "2006-01-02"
+	dateFormat = "2 January 2006"
 
-	# Add custom assets with their paths relative to the static folder
-	custom_js   = []
-	custom_css  = []
+	# Default keywords added on all pages
+	keywords = []
 
+	sidebarBehaviour = 1
+	thumbnailImage = true
+	thumbnailImagePosition = "right"
+	autoThumbnailImage = true
+	favicon = ""
+	coverImage = "oslogreen.jpg"
+	imageGallery = false
+	hierarchicalCategories = false
+	syntaxHighlighter = "highlight.js"
+	
+	disqusShortname = ""
+	googleAnalytics = ""
+	fbAdminIds = ""
+	fbAppId = ""
 
-	[params.sidebar]
-		# Replace the avatar with a picture of your own under static/images
-		avatar = "gravatar.jpg"
-		# Use Markdown to format the string. This works nearly all over the theme
-		bio = "I'm **Gianluca Fiore**, Mixologist of Code, Drinks and Food"
-		# The icons will be shown if you enter your username
-		twitter = "Donearm"
-		github = "Donearm"
-		dribbble = ""
-		facebook = "100005405778031"
-		googleplus = ""
-		flickr = "38059655@N00"
-		instagram = "gianlucadfiore"
-		lastfm = "gianlucafiore"
-		linkedin = "gianluca-fiore"
+	[[params.sharingOptions]]
+		name = "Facebook"
+		icon = "fa-facebook-official"
+		url = "https://www.facebook.com/sharer/sharer.php?u=%s"
 
-		copyright = [
-			"&copy; Gianluca Fiore",
-			"Design: [HTML5 UP](//html5up.net)",
-			"Demo Images: [Unsplash](//unsplash.com/)"
-		]
+	[[params.sharingOptions]]
+		name = "Twitter"
+		icon = "fa-twitter"
+		url = "https://twitter.com/intent/tweet?text=%s"
 
-
-	[params.about]
-		hide  = false
-		title = "Ipsum lorem dolor aliquam ante commodo magna sed accumsan arcu neque."
-		content = "Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis tortor primis integer massa adipiscing id nisi accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque cubilia."
-
-
-	[params.portfolio]
-		hide  = true 
-		title = "Recent Work"
-
-		# The images and thumbnails are stored under static/images
-		# Create and change subfolders as you like
-		[[params.portfolio.gallery]]
-			image = "fulls/01.jpg"
-			thumb = "thumbs/01.jpg"
-			title = "Lorem ipsum dolor."
-			description = "Lorem ipsum dolor sit amet."
-
-		[[params.portfolio.gallery]]
-			image = "fulls/02.jpg"
-			thumb = "thumbs/02.jpg"
-			title = "Lorem ipsum dolor."
-			description = "Lorem ipsum dolor sit amet."
-
-		[[params.portfolio.gallery]]
-			image = "fulls/03.jpg"
-			thumb = "thumbs/03.jpg"
-			title = "Lorem ipsum dolor."
-			description = "Lorem ipsum dolor sit amet."
-
-		[[params.portfolio.gallery]]
-			image = "fulls/04.jpg"
-			thumb = "thumbs/04.jpg"
-			title = "Lorem ipsum dolor."
-			description = "Lorem ipsum dolor sit amet."
-
-		[[params.portfolio.gallery]]
-			image = "fulls/05.jpg"
-			thumb = "thumbs/05.jpg"
-			title = "Lorem ipsum dolor."
-			description = "Lorem ipsum dolor sit amet."
-
-		[[params.portfolio.gallery]]
-			image = "fulls/06.jpg"
-			thumb = "thumbs/06.jpg"
-			title = "Lorem ipsum dolor."
-			description = "Lorem ipsum dolor sit amet."
-
-
-	[params.contact]
-		hide  = false
-		title = "Get In Touch"
-		content = "If you want to contact me, this is how you can (outside of the social media)"
-
-		address = [
-			"Rydlowka 31",
-			"30-363, Krakow",
-			"Poland"
-		]
-		# phone = "000-000-0000"
-
-		# Since this template is static, the contact form uses www.formspree.io as a
-		# proxy. The form makes a POST request to their servers to send the actual
-		# email. Visitors can send up to a 1000 emails each month for free.
-	    #
-	    # What you need to do for the setup?
-	    #
-	    # - set your email address under 'email' below
-	    # - upload the generated site to your server
-	    # - send a dummy email yourself to confirm your account
-	    # - click the confirm link in the email from www.formspree.io
-	    # - you're done. Happy mailing!
-		email = "forod.g@gmail.com"
-
-		[params.contact.form]
-			# Set custom strings for the form if your native
-			# language isn't English
-			name = "Name"
-			email = "Email"
-			message = "Message"
-			submit = "Send message"
+	[params.recentposts]
+		hide = false
+		title = "Recent blog posts"
 
 
 # Menu links that appear on the left sidebar
 [[menu.main]]
 	name = "Home"
+	identifier = "home"
+	pre = "<i class=\"sidebar-button-icon fa fa-lg fa-home\"></i>"
 	url  = "/"
 	weight = 1
 
 [[menu.main]]
 	name = "Blog"
+	identifier = "blog"
+	pre = "<i class=\"sidebar-button-icon fa fa-lg fa-bookmark\"></i>"
 	url  = "post/"
 	weight = 2
+
+[[menu.main]]
+	name = "Tags"
+	identifier = "tags"
+	pre = "<i class=\"sidebar-button-icon fa fa-lg fa-tags\"></i>"
+	url  = "/tags"
+	weight = 3
+
+[[menu.main]]
+	name = "Archive"
+	identifier = "archive"
+	pre = "<i class=\"sidebar-button-icon fa fa-lg fa-archive\"></i>"
+	url  = "/archives"
+	weight = 4
+
+[[menu.main]]
+	name = "Search"
+	identifier = "search"
+	pre = "<i class=\"sidebar-button-icon fa fa-lg fa-search\"></i>"
+	url  = "/#search"
+	weight = 5
+
+[[menu.main]]
+	name = "RSS"
+	identifier = "rss"
+	pre = "<i class=\"sidebar-button-icon fa fa-lg fa-rss\"></i>"
+	url = "/index.xml"
+	weight = 6
+	
+[[menu.links]]
+	name = "Github"
+	identifier = "github"
+	url = "https://github.com/Donearm"
+	pre = "<i class=\"sidebar-button-icon fa fa-lg fa-github\"></i>"
+	weight = 1
