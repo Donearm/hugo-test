@@ -70,66 +70,52 @@ pluralizeListTitles = false
   [params.intro.pic]
     src       = "/images/gravatar.jpg"
     # Sets Image to be a cirlce
-    circle    = false
+    circle    = true 
     # Sets Image to be Future Imperfect's hexagon
     imperfect = false 
-    width     = "80"
+    width     = "90"
     alt       = "Gianluca Fiore"
 
 [params.postAmount]
 # Sets the number of recent posts to show in the sidebar. The default value is 5.
     sidebar = 5
 
-
 # Menu links that appear on the left sidebar
 [[menu.main]]
 	name = "Home"
-	identifier = "home"
-	pre = "<i class=\"sidebar-button-icon fa fa-lg fa-home\"></i>"
+	identifier = "fa fa-lg fa-home"
 	url  = "/"
 	weight = 1
 
 [[menu.main]]
 	name = "Blog"
-	identifier = "blog"
-	pre = "<i class=\"sidebar-button-icon fa fa-lg fa-bookmark\"></i>"
+	identifier = "fa fa-lg fa-bookmark"
 	url  = "post/"
 	weight = 2
 
 [[menu.main]]
 	name = "Tags"
-	identifier = "tags"
-	pre = "<i class=\"sidebar-button-icon fa fa-lg fa-tags\"></i>"
+	identifier = "fa fa-lg fa-tags"
 	url  = "/tags"
 	weight = 3
 
 [[menu.main]]
 	name = "Archive"
-	identifier = "archive"
-	pre = "<i class=\"sidebar-button-icon fa fa-lg fa-archive\"></i>"
+	identifier = "fa fa-lg fa-archive"
 	url  = "/archives"
 	weight = 4
 
 [[menu.main]]
 	name = "Search"
-	identifier = "search"
-	pre = "<i class=\"sidebar-button-icon fa fa-lg fa-search\"></i>"
+	identifier = "fa fa-lg fa-search"
 	url  = "/#search"
 	weight = 5
 
 [[menu.main]]
 	name = "RSS"
-	identifier = "rss"
-	pre = "<i class=\"sidebar-button-icon fa fa-lg fa-rss\"></i>"
+	identifier = "fa fa-lg fa-rss"
 	url = "/index.xml"
 	weight = 6
-	
-[[menu.links]]
-	name = "Github"
-	identifier = "github"
-	url = "https://github.com/Donearm"
-	pre = "<i class=\"sidebar-button-icon fa fa-lg fa-github\"></i>"
-	weight = 1
 
 # Sets Social Media icons to appear and link to your account. Value should be your
 # username unless otherwise noted. These are the icons affected by socialAppearAtTop
