@@ -1,63 +1,84 @@
-baseurl = "http://replace-this-with-your-hugo-site.com/"
+baseurl = "/"
 languageCode = "en-gb"
-defaultContentLanguage = "en-gb"
 title = "Gianluca Fiore"
-theme = "hugo-tranquilpeak-theme"
-# Define how many posts should appear on a site
-paginate = 10
-canonifyurls = true
-
-[permalinks]
-	post = "/:year/:month/:slug/"
-
-[taxonomies]
-	tag = "tags"
-	category = "categories"
-	achive = "archives"
-
-[author]
-  name = "Gianluca Fiore"
-  bio = "Mixology of Code, Food and Drinks"
-  homepage = "https://github.com/Donearm"
-  gravatarEmail = "forod.g@gmail.com"
-  location = "Kraków, Poland"
-  twitter = "Donearm"
+theme = "hugo-future-imperfect"
+preserveTaxonomyNames = true
+paginate = 5
+disqusShortname = "Donearm"
+googleAnalytics = ""
+pluralizeListTitles = false
 
 [params]
-	# Format dates with Go's time formatting
-	dateFormat = "2 January 2006"
+  # Sets the meta tag description
+  description          = "HTML5 UP theme, Future Imperfect with some extra goodies, ported by Julio Pescador. Powered by Hugo"
+  # Sets the navbarTitle that appears in the top left of the navigation bar
+  navbarTitle          = "Gianluca Fiore"
+  # Sets where "View More Posts" links
+  viewMorePostLink     = "/blog/"
 
-	# Default keywords added on all pages
-	keywords = []
+# Optional Params
+  # Sets navbarTitle to match the section of the website
+  dynamicTitles        = true
+  # Sets RSS icons to appear on the sidebar with the social media buttons
+  rssAppearAtTop       = true
+  rssAppearAtBottom    = false
+  # Sets Social Media icons to appear on the sidebar
+  socialAppearAtTop    = false 
+  socialAppearAtBottom = true
+  # Sets Categories to sort by number of posts instead of alphabetical
+  categoriesByCount    = true
+  # Sets Estimated Reading Time to appear in post headers
+  includeReadingTime   = true
+  # Sets the Favicon and Version for the site. Default support is for
+  # apple-touch-icon-precomposed.png, favicon.png, favicon.ico, and mstile.png.
+  # These are stored in the favicon folder. See the following for more information:
+  # https://github.com/audreyr/favicon-cheat-sheet
+  loadFavicon          = false
+  faviconVersion       = ""
+  # Sets Social Share links to appear on posts
+  socialShare          = true
+  # Load custom CSS or JavaScript files. The variable is an array so that you
+  # can load multiple files if necessary. You can also load the standard theme
+  # files by adding the value, "default".
+  # customCSS            = ["default", "/path/to/file"]
+  # customJS             = ["default", "/path/to/file"]
+  customCSS            = ["default"]
+  customJS             = ["default"]
 
-	sidebarBehaviour = 1
-	thumbnailImage = true
-	thumbnailImagePosition = "right"
-	autoThumbnailImage = true
-	favicon = ""
-	coverImage = "oslogreen.jpg"
-	imageGallery = false
-	hierarchicalCategories = false
-	syntaxHighlighter = "highlight.js"
-	
-	disqusShortname = ""
-	googleAnalytics = ""
-	fbAdminIds = ""
-	fbAppId = ""
+# Disqus will take priority over Staticman (github.com/eduardoboucas/staticman)
+# due to its ease of use. Feel free to check out both and decide what you would
+# prefer to use. See Staticman.yml for additional settings.
+[params.staticman]
+  # Sets Statiman to be active
+  staticman = false
+  # Sets the location for Staticman to connect to
+  username  = ""
+  repo      = ""
+  branch    = ""
 
-	[[params.sharingOptions]]
-		name = "Facebook"
-		icon = "fa-facebook-official"
-		url = "https://www.facebook.com/sharer/sharer.php?u=%s"
+  # These are optional params related to the sidebar. They are recommended, but not
+  # required for proper functionality. HTML is supported within the params.
+[params.intro]
+  header    = "Gianluca Fiore"
 
-	[[params.sharingOptions]]
-		name = "Twitter"
-		icon = "fa-twitter"
-		url = "https://twitter.com/intent/tweet?text=%s"
+  paragraph = "Mixologist of Code, Drinks and Food"
 
-	[params.recentposts]
-		hide = false
-		title = "Recent blog posts"
+  about     = ""
+
+  # This appears at the top of the sidebar above params.intro.header.
+  # A width of less than 100px is recommended from a design perspective.
+  [params.intro.pic]
+    src       = "/images/gravatar.jpg"
+    # Sets Image to be a cirlce
+    circle    = false
+    # Sets Image to be Future Imperfect's hexagon
+    imperfect = false 
+    width     = "80"
+    alt       = "Gianluca Fiore"
+
+[params.postAmount]
+# Sets the number of recent posts to show in the sidebar. The default value is 5.
+    sidebar = 5
 
 
 # Menu links that appear on the left sidebar
@@ -109,3 +130,50 @@ canonifyurls = true
 	url = "https://github.com/Donearm"
 	pre = "<i class=\"sidebar-button-icon fa fa-lg fa-github\"></i>"
 	weight = 1
+
+# Sets Social Media icons to appear and link to your account. Value should be your
+# username unless otherwise noted. These are the icons affected by socialAppearAtTop
+# and socialAppearAtBottom.
+[social]
+  # Coding Communities
+  github          = "Donearm"
+  gitlab          = ""
+  stackoverflow   = "" # User Number
+  bitbucket       = ""
+  jsfiddle        = ""
+  codepen         = ""
+  # Visual Art Communities
+  deviantart      = ""
+  flickr          = "38059655@N00"
+  behance         = ""
+  dribbble        = ""
+  # Publishing Communities
+  wordpress       = ""
+  medium          = ""
+  # Professional/Business Oriented Communities
+  linkedin        = "gianluca-fiore-a70913b6"
+  foursquare      = ""
+  xing            = ""
+  slideshare      = ""
+  # Social Networks
+  facebook        = "100005405778031"
+  googleplus      = ""
+  reddit          = ""
+  quora           = ""
+  youtube         = ""
+  vimeo           = ""
+  lastfm		  = "gianlucafiore"
+  whatsapp        = "" # WhatsApp Number
+    # WeChat and QQ need testing.
+    wechat          = ""
+    qq              = "" # User ID Number
+  instagram       = "gianlucadfiore"
+  tumblr          = ""
+  twitter         = "Donearm"
+  skype           = ""
+  snapchat        = ""
+  pinterest       = ""
+  telegram        = ""
+  vine            = ""
+  # Email
+  email           = "forod.g@gmail.com"
