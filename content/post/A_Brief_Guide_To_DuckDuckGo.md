@@ -1,16 +1,12 @@
----
-title: "A Brief Guide To DuckDuckGo"
-date: 2015-03-07T17:08:55+01:00
-draft: false
-tags: 
-- search engine
-- duckduckgo
-- guide
-categories:
-- blog
-Og_Image: ddg_logo.jpg
-thumbnailImage: ddg_logo.jpg
----
++++
+title = "A Brief Guide To DuckDuckGo"
+date = 2015-03-07T17:08:55+01:00
+draft = false
+tags = ["search engine", "duckduckgo", "guide"]
+categories = ["blog"]
+Og_Image = "ddg_logo.jpg"
+thumbnailImage = "ddg_logo.jpg"
++++
 
 Or why you should be using it even if you don't care about [privacy](http://donttrack.us/) or don't know what a [search engine bubble](http://dontbubble.us/) may be.
 
