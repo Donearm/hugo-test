@@ -1,16 +1,16 @@
 ---
-title: "A_Brief_Guide_To_DuckDuckGo"
+title: "A Brief Guide To DuckDuckGo"
 date: 2015-03-07T17:08:55+01:00
 draft: false
 tags: ["search engine", "duckduckgo", "guide"]
-category: blog
-Og_Image: /images/ddg_logo.jpg
-thumbnailImage: /images/ddg_logo.jpg
+categories: blog
+Og_Image: images/ddg_logo.jpg
+thumbnailImage: images/ddg_logo.jpg
 ---
 
 Or why you should be using it even if you don't care about [privacy](http://donttrack.us/) or don't know what a [search engine bubble](http://dontbubble.us/) may be.
 
-<img src="/images/ddg_logo.jpg" width="1000" height="600" alt="DuckDuckGo  Logo">
+<img src="images/ddg_logo.jpg" width="1000" height="600" alt="DuckDuckGo  Logo">
 
 It's in no way comprehensive nor "the best of". Just what I find more useful.
 
