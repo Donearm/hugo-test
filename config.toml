@@ -15,6 +15,7 @@ pluralizeListTitles = false
   navbarTitle          = "Gianluca Fiore"
   # Sets where "View More Posts" links
   viewMorePostLink     = "/post/"
+  author			   = "Gianluca Fiore"
 
 # Optional Params
   # Sets navbarTitle to match the section of the website
