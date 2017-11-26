@@ -14,7 +14,7 @@ pluralizeListTitles = false
   # Sets the navbarTitle that appears in the top left of the navigation bar
   navbarTitle          = "Gianluca Fiore"
   # Sets where "View More Posts" links
-  viewMorePostLink     = "/blog/"
+  viewMorePostLink     = "/post/"
 
 # Optional Params
   # Sets navbarTitle to match the section of the website
@@ -63,7 +63,7 @@ pluralizeListTitles = false
 
   paragraph = "Mixologist of Code, Drinks and Food"
 
-  about     = ""
+  about     = "36 years old Italian from Naples, currently in Poland"
 
   # This appears at the top of the sidebar above params.intro.header.
   # A width of less than 100px is recommended from a design perspective.
